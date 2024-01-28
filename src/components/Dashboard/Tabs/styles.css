@@ -1,0 +1,17 @@
+.grid-flex{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.table-flex{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{ 
+    width: 100vw;
+    border-collapse: collapse; 
+    text-align: center;
+}

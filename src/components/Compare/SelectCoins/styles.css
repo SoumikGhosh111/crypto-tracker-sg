@@ -1,0 +1,23 @@
+.select-coin-div{ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+@media only screen and (max-width: 590px){ 
+    .select-day-wrapper p{ 
+        display: none;
+    }
+}
+@media only screen and (max-width: 460px){ 
+    .select-coin-div{ 
+        gap: 0rem;
+    }
+}
+@media only screen and (max-width: 400px){ 
+    .select-coin-div{ 
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}

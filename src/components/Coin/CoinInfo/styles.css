@@ -1,0 +1,15 @@
+p a{ 
+    text-decoration: underline !important;
+    color: var(--grey) !important;
+}
+p a:hover{ 
+    color: var(--blue) !important; 
+    transition: all 0.3s ease-in;
+}
+
+
+
+
+p a:not(:hover){ 
+    transition: all 0.3s ease-in;
+}

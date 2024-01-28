@@ -1,0 +1,29 @@
+.back-to-top{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid var(--green);
+    border-radius: 50%;
+    cursor: pointer; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: transparent;
+    color:var(--green);
+    /* z-index: 12; */
+}
+/* html{ 
+    scroll-behavior: smooth;
+} */
+/* .back-to-top:hover{ 
+    width: 3.3rem;
+    height: 3.3rem;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+} */
+
+/* .back-to-top:not(:hover){ 
+    transition: all 0.3s ease-in-out;
+} */

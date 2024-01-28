@@ -1,0 +1,176 @@
+.grid-container{ 
+    width: 300px;
+    height: 300px;
+    background: var(--darkgrey);
+    border-radius: 1rem; 
+    /* cursor: pointer; */
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+.grid-container:hover{ 
+    border:2px solid var(--green);
+    transition: all 0.3s ease-in-out;
+}
+
+.grid-container-red{ 
+    width: 300px;
+    height: 300px;
+    background: var(--darkgrey);
+    border-radius: 1rem;
+     cursor: pointer;
+     border: 2px solid transparent;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: column;
+     position: relative;
+}
+.grid-container-red:hover{ 
+    border: 2px solid var(--red);
+    transition: all 0.3s ease-in-out;
+}
+.image-name-symbol{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 20px;
+}
+.logo-img{ 
+    width: 3rem;
+    border-radius: 50%;
+}
+.logo-img img{ 
+    width: 100%;
+    height: 100%;
+}
+.percentage-trending{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 20px;
+
+}
+.percentage{ 
+    width: 7rem;
+    height: 2.5rem;
+    border: 1px solid var(--green);
+    border-radius: 3rem;
+    text-align: center;
+    color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.percentage:hover{ 
+    background: var(--green);
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+.percentage-red{ 
+    width: 7rem;
+    height: 2.5rem;
+    border: 1px solid var(--red);
+    border-radius: 3rem;
+    text-align: center;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.percentage-red:hover{ 
+    background: var(--red);
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+.trending-status{ 
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green); 
+}
+.trending-status:hover{ 
+    background: var(--green);
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
+.trending-status-red{ 
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--red);
+}
+.trending-status-red:hover{ 
+    background: var(--red);
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+.current-price{ 
+    color: var(--green);
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+.current-price-red{ 
+    color: var(--red);
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+.volume-cap{ 
+    margin-left: 20px;
+}
+
+.add-to-list-button{ 
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+
+.add-to-list-button:hover{ 
+    transition: all 0.3s ease-in-out;
+    background-color: var(--blue);
+}
+.add-to-list-button:hover  .add-to-list-button-inner{ 
+    color: var(--darkgrey);
+    transition: all 0.3s ease-in-out
+}
+.add-to-list-button:hover  .add-to-list-button-inner-fill{ 
+    color: var(--darkgrey);
+    transition: all 0.3s ease-in-out
+}
+
+.add-to-list-button:not(:hover){ 
+    transition: all 0.3s ease-in-out;
+}
+
+.add-to-list-button:not(:hover) .add-to-list-button-inner, .add-to-list-button-inner-fill{ 
+    transition: all 0.3s ease-in-out;
+}
+.add-to-list-button:not(:hover)  .add-to-list-button-inner-fill{ 
+    transition: all 0.3s ease-in-out;
+}
+
+.add-to-list-button-inner, .add-to-list-button-inner-fill{ 
+    color: var(--blue); 
+}
+
+
+.grid-container:not(:hover), .grid-container-red:not(:hover), .percentage:not(:hover), .percentage-red:not(:hover), .trending-status:not(:hover), .trending-status-red:not(:hover){ 
+    transition: all 0.3s ease-in-out;
+}

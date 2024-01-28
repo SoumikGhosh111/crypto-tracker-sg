@@ -1,0 +1,19 @@
+.select-type{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 532px){ 
+    .MuiToggleButtonGroup-root{ 
+   
+        height: 2rem;
+    }
+}
+@media only screen and (max-width: 392px){ 
+    .MuiToggleButtonGroup-root{ 
+   
+        height: 3rem;
+    }
+}

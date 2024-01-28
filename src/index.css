@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
+:root{ 
+  --white: #fff; 
+  --black: #111; 
+  --blue: #3a80e9; 
+  --grey: #888; 
+  --darkgrey: #1b1b1b; 
+  --green: #61c96f; 
+  --red: #f94141; 
+}
+[data-theme="light"] {
+  --white: #ffffff;
+  --black: #111;
+  --grey: #888;
+  --darkgrey: #1b1b1b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme="dark"] {
+  --white: #111;
+  --black: #fff;
+  --grey: #888;
+  --darkgrey: #f3f3f3;
 }
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+::selection{ 
+  background: var(--blue);
+  color: var(--white);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px; */
+  background: var(--darkgrey);
+}
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue); 
+  
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  }
+
+  .coin-wrapper{ 
+    background-color: var(--darkgrey);
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    overflow-x: hidden;
+    padding: 0.5rem;
+    text-align: justify;
+    
+  }
+  .coin-wrapper:hover{ 
+    border: 2px solid var(--blue);
+    transition: all 0.3s ease-in-out;
+  }
+  .coin-wrapper:not(:hover){ 
+    transition: all 0.3s ease-in-out;
+  }
+  a{ 
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .empty-watchlist{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    padding: 0rem 2rem;
+    text-align: center;
+  }
