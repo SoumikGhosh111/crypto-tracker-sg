@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Chart, LineElement, LineController, CategoryScale, LinearScale } from 'chart.js';
+import { Chart, LineElement, LineController, PointElement, CategoryScale, LinearScale } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import { useScreenSize } from '../../../functions/useScreenSize';
 
@@ -12,7 +12,7 @@ const LineChartComp = ({ prices, coinInfo }) => {
     if (chartInstance.current) { // Check if chart instance exists
       chartInstance.current.destroy(); // Destroy the old chart
     }
-    Chart.register(LineElement, LineController, CategoryScale, LinearScale);
+    Chart.register(LineElement, LineController, PointElement, CategoryScale, LinearScale);
     const myChartRef = chartRef.current.getContext("2d");
 
     const labels = prices.map((price) => { 
