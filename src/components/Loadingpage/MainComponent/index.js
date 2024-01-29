@@ -6,11 +6,11 @@ import gradient from "../../../assets/gradient 1.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { RWebShare } from "react-web-share";
-import LineChartComp from "../../Coin/LineChart";
+import { WhatsappShareButton } from 'react-share'; 
 
 function MainComponent() {
 
-    const APP_URL = "https://crypto-tracker-app.netlify.app/";
+    const APP_URL = "https://crypto-tracker-app-sg.netlify.app/";
     return (
         <div className="flex-info">
             <div className="text-paras">
@@ -41,18 +41,14 @@ function MainComponent() {
 
                 <div className="buttons">
                     <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.25, delay: 0.75 }}> <Link to='/dashboard' className="link"> <Button text={"Dashboard"} outLined={false} onClick={() => console.log("i am dashboard")} /> </Link></motion.div>
-                    <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.25, delay: 1 }}>
-                        {/* <RWebShare
-                            data={{
-                                text: "Checkout my crypto tracker made using React!",
-                                url: APP_URL,
-                                title: "Crypto Tracker",
-                            }}
-                            // onClick={() => console.log("shared successfully!")}
-                        >
+                    <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.25, delay: 1 }}
+                        
+                    >
+                        
                             
-                        </RWebShare> */}
-                        <Button text={"Share"} outLined={true} onClick={()=> console.log("this is share button")}/>
+                      <WhatsappShareButton url={APP_URL}>
+                        <Button text={"Share"} outLined={true} onClick={() => console.log("shared successfully!")}/>
+                      </WhatsappShareButton>
                     </motion.div>
                 </div>
             </div>
