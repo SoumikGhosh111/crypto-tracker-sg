@@ -9,7 +9,7 @@ import { RWebShare } from "react-web-share";
 // import { APP_URL } from "../../constants";
 function Footer() {
 
-  const APP_URL = "https://crypto-tracker-app-sg.netlify.app/";
+  const APP_URL = "https://crypto-tracker-app-sg-jan.netlify.app/";
   return (
     <div className="footer">
       <div id="footer" className="footer-wrapper">

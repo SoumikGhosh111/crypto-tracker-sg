@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Chart } from 'chart.js/auto';
+import { Chart } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import { useScreenSize } from '../../../functions/useScreenSize';
 

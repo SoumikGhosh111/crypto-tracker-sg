@@ -10,7 +10,7 @@ import { WhatsappShareButton } from 'react-share';
 
 function MainComponent() {
 
-    const APP_URL = "https://crypto-tracker-app-sg.netlify.app/";
+    const APP_URL = "https://crypto-tracker-app-sg-jan.netlify.app/";
     return (
         <div className="flex-info">
             <div className="text-paras">
