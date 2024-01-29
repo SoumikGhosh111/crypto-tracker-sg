@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Chart, LineElement, LineController, CategoryScale, LinearScale } from 'chart.js'; 
+import { Chart, LineElement, LineController, PointElement, CategoryScale, LinearScale } from 'chart.js'; 
 import { Line } from 'react-chartjs-2';
 import { useScreenSize } from '../../../functions/useScreenSize';
 import { convertNumbers } from '../../../functions/convertNumbers';
@@ -13,7 +13,7 @@ const MultiAxisLineChart = ({ coinData1, coinData2, coin1Info, coin2Info }) => {
     if (chartInstance.current) {
       chartInstance.current.destroy();
     }
-    Chart.register(LineElement, LineController, CategoryScale, LinearScale);
+    Chart.register(LineElement, LineController, PointElement, CategoryScale, LinearScale);
     const myChartRef = chartRef.current.getContext("2d");
 
 
